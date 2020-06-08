@@ -1,0 +1,187 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:sap="http://www.sap.com/Protocols/SAPData" Namespace="ZGMAO_ODATA_SRV"
+			xml:lang="es" sap:schema-version="1">
+			<EntityType Name="Equi_GetDetail" sap:content-version="1">
+				<Key><PropertyRef Name="Zequipo"/></Key><Property Name="Zequipo" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Equipo" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zdenom" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Znserie" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Fabr. Nº-serie" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zcliente" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Sociedad" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Ztequi" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Tipo de equipo" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zplanplant" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Centro planif." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zplangroup" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Grupo planif." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zinnam" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Nom.gpo.plan.PM" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zgarantiaclien" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Car.8" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zgarantiaprov" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Car.8" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zstreet" Type="Edm.String" Nullable="false" MaxLength="60" sap:label="Calle" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZhouseNum1" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Nº (edificio)" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zcodpostal" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Código postal" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zpoblacion" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Población" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zregion" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Región" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZtxtRegion" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zpais" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="País" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zgpslatitud" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Valor caract." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zgpslongitud" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Valor caract." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="Equi_GetDocument" sap:content-version="1">
+				<Key><PropertyRef Name="Zequipo"/></Key><Property Name="Zequipo" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Equipo" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zdescript" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Título" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Ztipo" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Tipo" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zline" Type="Edm.String" Nullable="false" MaxLength="25000" sap:label="zlin" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="OM_GetDetail" sap:content-version="1">
+				<Key><PropertyRef Name="Zorderid"/></Key><Property Name="Zorderid" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Orden" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="NAVALLDETAIL" Relationship="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_AllDetail"
+					FromRole="FromRole_OM_GetDetail_ZOM_GetDetail_AllDetail" ToRole="ToRole_OM_GetDetail_ZOM_GetDetail_AllDetail"/><NavigationProperty Name="NAVPARTNER" Relationship="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_Partner"
+					FromRole="FromRole_OM_GetDetail_ZOM_GetDetail_Partner" ToRole="ToRole_OM_GetDetail_ZOM_GetDetail_Partner"/><NavigationProperty Name="NAVDESCRIPTION" Relationship="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_TxtDescrip"
+					FromRole="FromRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip" ToRole="ToRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"/></EntityType>
+			<EntityType Name="ZOM_GetDetail_AllDetail" sap:content-version="1">
+				<Key><PropertyRef Name="ZdetOrderid"/></Key><Property Name="ZdetOrderid" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Orden" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZdetShortDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Texto breve" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetStatus" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Status usuario" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetPriority" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Prioridad" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetTxtPrio" Type="Edm.String" Nullable="false" MaxLength="16" sap:label="String (16 caract.)" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetOrdrType" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Clase de orden" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetTypeTxt" Type="Edm.String" Nullable="false" MaxLength="64" sap:label="String (64 caracts.)" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetStartDate" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Car.8" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetFinishDate" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Car.8" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdetNameEquip" Type="Edm.String" Nullable="false" MaxLength="64" sap:label="String (64 caracts.)" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZadrStreet" Type="Edm.String" Nullable="false" MaxLength="60" sap:label="Calle" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZadrCodpostal" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Código postal" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZadrPob" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Población" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZadrRegion" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZadrTxtRegion" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZadrPais" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="País" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZadrLatitud" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Valor caract." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZadrLongitud" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Valor caract." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZothersNotifNo" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Aviso" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZOM_GetDetail_Partner" sap:content-version="1">
+				<Key><PropertyRef Name="ZpersNo"/></Key><Property Name="ZpersNo" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Interlocutor" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZpersName" Type="Edm.String" Nullable="false" MaxLength="64" sap:label="String (64 caracts.)" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZpersRole" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Func.interloc." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZtextRole" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Car.20" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZOM_GetDetail_TxtDescription" sap:content-version="1">
+				<Key><PropertyRef Name="ZrefMo"/></Key><Property Name="ZrefMo" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Operación" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZtxtMo" Type="Edm.String" Nullable="false" MaxLength="132" sap:label="Línea de texto" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="OM_GetList" sap:content-version="1">
+				<Key><PropertyRef Name="FieldName"/></Key><Property Name="FieldName" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Componente" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Sign" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="INCL/EXCL" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Option" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Opción" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="LowValue" Type="Edm.String" Nullable="false" MaxLength="45" sap:label="Valor selección" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="HighValue" Type="Edm.String" MaxLength="45" sap:label="Valor selección" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="NAVOMLIST" Relationship="ZGMAO_ODATA_SRV.OM_GetList_ZOM_GetList_OutList"
+					FromRole="FromRole_OM_GetList_ZOM_GetList_OutList" ToRole="ToRole_OM_GetList_ZOM_GetList_OutList"/><NavigationProperty Name="ZOM_GetList_BodySet" Relationship="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_Body"
+					FromRole="FromRole_OM_GetDetail_ZOM_Body" ToRole="ToRole_OM_GetDetail_ZOM_Body"/></EntityType>
+			<EntityType Name="ZOM_GetList_OutList" sap:content-version="1">
+				<Key><PropertyRef Name="OrderId"/></Key><Property Name="Nro" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Ámbito no definido , posiblemente para niveles patch"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="OrderId" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Orden" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="OrderDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Texto breve" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="ZOM_GetList_Body" sap:content-version="1">
+				<Key><PropertyRef Name="FieldName"/></Key><Property Name="FieldName" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Componente" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Sign" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="INCL/EXCL" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Option" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Opción" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="LowValue" Type="Edm.String" Nullable="false" MaxLength="45" sap:label="Valor selección" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="HighValue" Type="Edm.String" Nullable="false" MaxLength="45" sap:label="Valor selección" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="OM_GetDocument" sap:content-version="1">
+				<Key><PropertyRef Name="Zorderid"/></Key><Property Name="Zorderid" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Orden" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zdescript" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Título" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Ztipo" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Tipo" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zline" Type="Edm.String" Nullable="false" MaxLength="25000" sap:label="zlin" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="Equi_GetList" sap:content-version="1">
+				<Key><PropertyRef Name="ZubTec"/></Key><Property Name="ZubTec" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Ubicac.técnica" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="EQUILIST" Relationship="ZGMAO_ODATA_SRV.Equi_GetList_ZequiList" FromRole="FromRole_Equi_GetList_ZequiList"
+					ToRole="ToRole_Equi_GetList_ZequiList"/></EntityType>
+			<EntityType Name="ZequiList" sap:content-version="1">
+				<Key><PropertyRef Name="Zequnr"/></Key><Property Name="Zequnr" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Equipo" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zdescript" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zemplaza" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Ce.emplazam." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="OM_GetMatList" sap:content-version="1">
+				<Key><PropertyRef Name="Zorderid"/></Key><Property Name="Zorderid" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Orden" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><NavigationProperty Name="MATERLIST" Relationship="ZGMAO_ODATA_SRV.OM_GetMatList_ZmatList" FromRole="FromRole_OM_GetMatList_ZmatList"
+					ToRole="ToRole_OM_GetMatList_ZmatList"/></EntityType>
+			<EntityType Name="ZmatList" sap:content-version="1">
+				<Key><PropertyRef Name="MatCode"/></Key><Property Name="MatCode" Type="Edm.String" Nullable="false" MaxLength="18" sap:label="Material" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Denominacion" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Denominación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Cantidad" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Campo carácter longitud 12" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<Association Name="OM_GetDetail_ZOM_GetDetail_AllDetail" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetDetail" Multiplicity="1" Role="FromRole_OM_GetDetail_ZOM_GetDetail_AllDetail"/><End Type="ZGMAO_ODATA_SRV.ZOM_GetDetail_AllDetail" Multiplicity="*" Role="ToRole_OM_GetDetail_ZOM_GetDetail_AllDetail"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetDetail_ZOM_GetDetail_AllDetail"><PropertyRef Name="Zorderid"/></Principal>
+					<Dependent Role="ToRole_OM_GetDetail_ZOM_GetDetail_AllDetail"><PropertyRef Name="ZdetOrderid"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OM_GetDetail_ZOM_GetDetail_Partner" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetDetail" Multiplicity="1" Role="FromRole_OM_GetDetail_ZOM_GetDetail_Partner"/><End Type="ZGMAO_ODATA_SRV.ZOM_GetDetail_Partner" Multiplicity="*" Role="ToRole_OM_GetDetail_ZOM_GetDetail_Partner"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetDetail_ZOM_GetDetail_Partner"><PropertyRef Name="Zorderid"/></Principal>
+					<Dependent Role="ToRole_OM_GetDetail_ZOM_GetDetail_Partner"><PropertyRef Name="ZpersNo"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OM_GetDetail_ZOM_GetDetail_TxtDescrip" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetDetail" Multiplicity="1" Role="FromRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"/><End Type="ZGMAO_ODATA_SRV.ZOM_GetDetail_TxtDescription" Multiplicity="*" Role="ToRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"><PropertyRef Name="Zorderid"/></Principal>
+					<Dependent Role="ToRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"><PropertyRef Name="ZrefMo"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OM_GetMatList_ZmatList" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetMatList" Multiplicity="1" Role="FromRole_OM_GetMatList_ZmatList"/><End Type="ZGMAO_ODATA_SRV.ZmatList" Multiplicity="*" Role="ToRole_OM_GetMatList_ZmatList"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetMatList_ZmatList"><PropertyRef Name="Zorderid"/></Principal>
+					<Dependent Role="ToRole_OM_GetMatList_ZmatList"><PropertyRef Name="MatCode"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OM_GetList_ZOM_GetList_OutList" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetList" Multiplicity="1" Role="FromRole_OM_GetList_ZOM_GetList_OutList"/><End Type="ZGMAO_ODATA_SRV.ZOM_GetList_OutList" Multiplicity="*" Role="ToRole_OM_GetList_ZOM_GetList_OutList"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetList_ZOM_GetList_OutList"><PropertyRef Name="FieldName"/></Principal>
+					<Dependent Role="ToRole_OM_GetList_ZOM_GetList_OutList"><PropertyRef Name="OrderId"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OM_GetDetail_ZOM_Body" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.OM_GetList" Multiplicity="1" Role="FromRole_OM_GetDetail_ZOM_Body"/><End Type="ZGMAO_ODATA_SRV.ZOM_GetList_Body" Multiplicity="*" Role="ToRole_OM_GetDetail_ZOM_Body"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OM_GetDetail_ZOM_Body"><PropertyRef Name="FieldName"/></Principal>
+					<Dependent Role="ToRole_OM_GetDetail_ZOM_Body"><PropertyRef Name="FieldName"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Equi_GetList_ZequiList" sap:content-version="1"><End Type="ZGMAO_ODATA_SRV.Equi_GetList" Multiplicity="1" Role="FromRole_Equi_GetList_ZequiList"/><End Type="ZGMAO_ODATA_SRV.ZequiList" Multiplicity="*" Role="ToRole_Equi_GetList_ZequiList"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Equi_GetList_ZequiList"><PropertyRef Name="ZubTec"/></Principal>
+					<Dependent Role="ToRole_Equi_GetList_ZequiList"><PropertyRef Name="Zequnr"/></Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="ZGMAO_ODATA_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="Equi_GetDocumentSet" EntityType="ZGMAO_ODATA_SRV.Equi_GetDocument" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="OM_GetDetailSet" EntityType="ZGMAO_ODATA_SRV.OM_GetDetail" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZOM_GetDetail_AllDetailSet" EntityType="ZGMAO_ODATA_SRV.ZOM_GetDetail_AllDetail" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZOM_GetDetail_PartnerSet" EntityType="ZGMAO_ODATA_SRV.ZOM_GetDetail_Partner" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZOM_GetDetail_TxtDescriptionSet" EntityType="ZGMAO_ODATA_SRV.ZOM_GetDetail_TxtDescription" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="OM_GetListSet" EntityType="ZGMAO_ODATA_SRV.OM_GetList" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZOM_GetList_OutListSet" EntityType="ZGMAO_ODATA_SRV.ZOM_GetList_OutList" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZOM_GetList_BodySet" EntityType="ZGMAO_ODATA_SRV.ZOM_GetList_Body" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="OM_GetDocumentSet" EntityType="ZGMAO_ODATA_SRV.OM_GetDocument" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="Equi_GetListSet" EntityType="ZGMAO_ODATA_SRV.Equi_GetList" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZequiListSet" EntityType="ZGMAO_ODATA_SRV.ZequiList" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="OM_GetMatListSet" EntityType="ZGMAO_ODATA_SRV.OM_GetMatList" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="ZmatListSet" EntityType="ZGMAO_ODATA_SRV.ZmatList" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/><EntitySet Name="Equi_GetDetailSet" EntityType="ZGMAO_ODATA_SRV.Equi_GetDetail" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+				<AssociationSet Name="OM_GetDetail_ZOM_BodySet" Association="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_Body" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetListSet" Role="FromRole_OM_GetDetail_ZOM_Body"/><End EntitySet="ZOM_GetList_BodySet" Role="ToRole_OM_GetDetail_ZOM_Body"/></AssociationSet>
+				<AssociationSet Name="Equi_GetList_ZequiListSet" Association="ZGMAO_ODATA_SRV.Equi_GetList_ZequiList" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="Equi_GetListSet" Role="FromRole_Equi_GetList_ZequiList"/><End EntitySet="ZequiListSet" Role="ToRole_Equi_GetList_ZequiList"/></AssociationSet>
+				<AssociationSet Name="OM_GetDetail_ZOM_GetDetail_PartnerSet" Association="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_Partner"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetDetailSet" Role="FromRole_OM_GetDetail_ZOM_GetDetail_Partner"/><End EntitySet="ZOM_GetDetail_PartnerSet" Role="ToRole_OM_GetDetail_ZOM_GetDetail_Partner"/></AssociationSet>
+				<AssociationSet Name="OM_GetDetail_ZOM_GetDetail_AllDetailSet" Association="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_AllDetail"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetDetailSet" Role="FromRole_OM_GetDetail_ZOM_GetDetail_AllDetail"/><End EntitySet="ZOM_GetDetail_AllDetailSet" Role="ToRole_OM_GetDetail_ZOM_GetDetail_AllDetail"/></AssociationSet>
+				<AssociationSet Name="OM_GetList_ZOM_GetList_OutListSet" Association="ZGMAO_ODATA_SRV.OM_GetList_ZOM_GetList_OutList" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetListSet" Role="FromRole_OM_GetList_ZOM_GetList_OutList"/><End EntitySet="ZOM_GetList_OutListSet" Role="ToRole_OM_GetList_ZOM_GetList_OutList"/></AssociationSet>
+				<AssociationSet Name="OM_GetMatList_ZmatListSet" Association="ZGMAO_ODATA_SRV.OM_GetMatList_ZmatList" sap:creatable="false"
+					sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetMatListSet" Role="FromRole_OM_GetMatList_ZmatList"/><End EntitySet="ZmatListSet" Role="ToRole_OM_GetMatList_ZmatList"/></AssociationSet>
+				<AssociationSet Name="OM_GetDetail_ZOM_GetDetail_TxtDescripSet" Association="ZGMAO_ODATA_SRV.OM_GetDetail_ZOM_GetDetail_TxtDescrip"
+					sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"><End EntitySet="OM_GetDetailSet" Role="FromRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"/><End EntitySet="ZOM_GetDetail_TxtDescriptionSet" Role="ToRole_OM_GetDetail_ZOM_GetDetail_TxtDescrip"/></AssociationSet>
+			</EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZGMAO_ODATA_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZGMAO_ODATA_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
